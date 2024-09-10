@@ -1,0 +1,120 @@
+#loginFormMainContainer {
+  height: 100vh;
+  background-color: rgb(61, 119, 119);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#loginForm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  width: 30vw;
+}
+#loginForm > input {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+}
+#loginForm > button {
+  width: 100%;
+  padding: 10px;
+  background-color: black;
+  color: white;
+}
+#loginForm > button:hover {
+  cursor: pointer;
+}
+
+#chatFormMainContainer {
+  background-color: rgb(209, 209, 209);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#startChatTitle {
+  text-align: center;
+  padding: 10px;
+  color: rgba(0, 0, 0, 0.564);
+}
+
+#chatRoom {
+  width: 100%;
+  padding: 15px 20px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scrollbar-width: 0px;
+  flex-direction: column;
+  /* margin-bottom: 6vw; */
+  background-color: rgba(0, 0, 0, 0.738);
+  gap: 10px;
+  position: fixed;
+  bottom: 0vh;
+}
+#messageContainer {
+  width: 100%;
+  margin-bottom: 20px;
+}
+#messageContainer > input {
+  width: 90%;
+  padding: 20px 20px;
+  border-radius: 10px 0px 0px 10px;
+  background-color: rgb(216, 216, 216);
+  font-size: 18px;
+  border: none;
+  outline: none;
+}
+#messageContainer > button {
+  width: 10%;
+  padding: 20px 22px;
+  font-size: 18px;
+  border-radius: 0px 10px 10px 0px;
+  border: none;
+  background-color: black;
+  cursor: pointer;
+  border: none;
+  height: 100%;
+  color: white;
+}
+#messages::-webkit-scrollbar {
+  display: none;
+}
+
+#messages {
+  width: 100%;
+  min-height: 88.5vh;
+  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  /* border: 2px solid rgba(0, 0, 0, 0.242); */
+  /* border-radius: 5px 5px 0px 0px; */
+  padding: 20px;
+  gap: 15px;
+}
+#messages > li {
+    display: flex;
+    padding: 10px 25px;
+    list-style: none;
+    border: 1px solid rgba(0, 0, 0, 0.405);
+  background-color: rgba(173, 149, 196, 0.221);
+  border-radius: 5px;
+}
+#messages > li > span {
+  display: flex;
+  width: 94%;
+  white-space: pre-wrap;
+  padding: 0px 5px;
+  list-style: none;
+  border-radius: 5px;
+}
+
+#userName{
+  display: flex;
+}
